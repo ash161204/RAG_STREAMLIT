@@ -1,0 +1,11 @@
+# requirements.txt
+streamlit
+google-generativeai
+chromadb
+sentence-transformers
+PyMuPDF # This is 'fitz'
+pytesseract
+python-docx
+Pillow
+python-dotenv
+# Add any other libraries you might have installed
