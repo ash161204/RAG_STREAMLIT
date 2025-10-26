@@ -5,7 +5,7 @@ import tempfile
 
 # Import all your core logic functions from rag_core.py
 # (Make sure rag_core.py is in the same folder)
-from test_core_core import (
+from test_core import (
     extract_text,
     get_conversational_answer,
     _store_in_long_term_memory, # We can still use this
@@ -144,4 +144,5 @@ if prompt := st.chat_input("Ask a question about your document..."):
                 source_str = ", ".join([f"Page {s['page']}" for s in sources])
                 st.caption(f"Sources: {source_str}")
         
+
         st.session_state.history.append({"role": "model", "parts": answer})
