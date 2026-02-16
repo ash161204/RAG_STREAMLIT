@@ -41,7 +41,7 @@ try:
     
     print("Loading generative model...")
     # Using a standard, working model name
-    model = genai.GenerativeModel('gemini-2.0-flash-lite') 
+    model = genai.GenerativeModel('gemini-3.0-pro') 
     
     print("Initializing ChromaDB client...")
     chroma_client = chromadb.PersistentClient(path="./chroma_db") 
